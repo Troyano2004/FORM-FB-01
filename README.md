@@ -29,32 +29,9 @@ Pasos en Overleaf:
 3. Presionar **Recompile**. Overleaf hace las pasadas de pdfLaTeX y biber en el orden correcto.
 4. Descargar el PDF con el botón de descarga del visor.
 
-![Compilación en Overleaf](evidencias/compilacion-overleaf.png)
+![Compilación en Overleaf](compilacion-overleaf.png)
 
-## Compilar en una computadora (opcional)
 
-Si se quiere compilar fuera de Overleaf, el orden de los comandos importa, porque biber necesita el archivo `.bcf` que genera la primera pasada:
-
-```bash
-pdflatex main.tex
-biber main
-pdflatex main.tex
-pdflatex main.tex
-```
-
-Otra opción es usar `latexmk -pdf main.tex`, que hace todas las pasadas solo.
-
-### Dependencias
-
-- Una distribución de LaTeX: TeX Live 2022 o posterior, o MiKTeX.
-- `biber`, que es el backend bibliográfico de biblatex (no se usa BibTeX).
-- Paquetes LaTeX: `biblatex`, `biblatex-ieee`, `babel` con idioma `spanish`, `csquotes`, `hyperref`, `geometry`, `enumitem`, `parskip`, `lmodern`.
-
-En Debian o Ubuntu se instalan con:
-
-```bash
-sudo apt-get install texlive-latex-extra texlive-bibtex-extra texlive-lang-spanish biber latexmk
-```
 
 En Overleaf todos estos paquetes ya vienen instalados.
 
