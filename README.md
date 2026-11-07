@@ -10,7 +10,7 @@ Actividad formativa individual previa a TA-IND-01: cinco fichas bibliográficas 
 |---|---|
 | `main.tex` | Archivo principal del documento |
 | `fuentes.bib` | Base bibliográfica con las cinco fuentes y sus DOI |
-| `main.pdf` | Documento compilado |
+| `FORM-FB-01.pdf` | Documento compilado |
 | `evidencias/compilacion-overleaf.png` | Captura del proyecto compilado en Overleaf |
 | `README.md` | Este archivo |
 
@@ -24,7 +24,7 @@ El documento lo compilé en **Overleaf**, en el proyecto `FORM-FB-01`.
 
 Pasos en Overleaf:
 
-1. Crear un proyecto en blanco y subir `main.tex` y `fuentes.bib`.
+1. Crear un proyecto en blanco y se crea  `main.tex` y `fuentes.bib`.
 2. En *Menu → Settings*, revisar que el compilador sea `pdfLaTeX` y que el documento principal sea `main.tex`.
 3. Presionar **Recompile**. Overleaf hace las pasadas de pdfLaTeX y biber en el orden correcto.
 4. Descargar el PDF con el botón de descarga del visor.
